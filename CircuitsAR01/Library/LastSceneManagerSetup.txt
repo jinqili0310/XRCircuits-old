@@ -1,0 +1,21 @@
+sceneSetups:
+- path: Assets/MagicLeap/Examples/Scenes/MediaPlayer.unity
+  isLoaded: 0
+  isActive: 0
+  isSubScene: 0
+- path: Assets/Scenes/launchScreen02.unity
+  isLoaded: 0
+  isActive: 0
+  isSubScene: 0
+- path: Assets/Scenes/launchScreen03.unity
+  isLoaded: 1
+  isActive: 1
+  isSubScene: 0
+- path: Assets/MagicLeap/Examples/Scenes/ImageTracking.unity
+  isLoaded: 0
+  isActive: 0
+  isSubScene: 0
+- path: Assets/Scenes/imageRecognition.unity
+  isLoaded: 0
+  isActive: 0
+  isSubScene: 0
