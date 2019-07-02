@@ -1,0 +1,297 @@
+{
+ "entries": [
+  {
+   "compression": 8,
+   "hash": "e207ab239170448b58b60c6a06156f048ca822ff",
+   "pkgpath": "Data/Managed/Metadata/global-metadata.dat",
+   "size": 3181908,
+   "src": "C:/Users/Administrator/Documents/GitHub/AR-Circuits/CircuitsAR02-3/Temp/StagingArea/Data/Managed/Metadata/global-metadata.dat"
+  },
+  {
+   "compression": 8,
+   "hash": "f2b67c9b42fff99cc6fe7fa0e45e7cce007d8e7e",
+   "pkgpath": "bin/libil2cpp.so",
+   "size": 47239208,
+   "src": "C:/Users/Administrator/Documents/GitHub/AR-Circuits/CircuitsAR02-3/Temp/StagingArea/Data/Native/libil2cpp.so",
+   "xfrm_flags": {
+    "signed": {
+     "cert": "C:\\Users\\Administrator\\Desktop\\ML-Cert\\ml-test.cert"
+    },
+    "taildata": {
+     "debuggable": true,
+     "sbox": "USER",
+     "version": 3
+    }
+   },
+   "xfrm_hash": "47987ba63ffde7708cf91c626972489b1328af6f",
+   "xfrm_path": "C:/Users/Administrator/Documents/GitHub/AR-Circuits/CircuitsAR02-3/.out/.cache/debug_lumin_clang-3.8_aarch64/com.ecedept.circuitsar1-ad44a5ccb0312814\\libil2cpp.so-7fc91c9dd2c5318f",
+   "xfrm_size": 47239966
+  },
+  {
+   "compression": 8,
+   "hash": "6b3b1067e8eeb28457c572292a209cc931e93089",
+   "pkgpath": "bin/AudioPluginMSASpatializer.so",
+   "size": 269360,
+   "src": "C:/Users/Administrator/Documents/GitHub/AR-Circuits/CircuitsAR02-3/Temp/StagingArea/Data/Plugins/AudioPluginMSASpatializer.so",
+   "xfrm_flags": {
+    "signed": {
+     "cert": "C:\\Users\\Administrator\\Desktop\\ML-Cert\\ml-test.cert"
+    },
+    "taildata": {
+     "debuggable": true,
+     "sbox": "USER",
+     "version": 3
+    }
+   },
+   "xfrm_hash": "bc2651833d86e26cf5ab048ec31466037f002f53",
+   "xfrm_path": "C:/Users/Administrator/Documents/GitHub/AR-Circuits/CircuitsAR02-3/.out/.cache/debug_lumin_clang-3.8_aarch64/com.ecedept.circuitsar1-ad44a5ccb0312814\\AudioPluginMSASpatializer.so-ef33c63f249f52d9",
+   "xfrm_size": 270118
+  },
+  {
+   "compression": 8,
+   "hash": "c122dd54e26d5c07da8d4f935633755680964685",
+   "pkgpath": "bin/UnityEngine.TestRunner.dll",
+   "size": 100864,
+   "src": "C:/Users/Administrator/Documents/GitHub/AR-Circuits/CircuitsAR02-3/Temp/StagingArea/Data/Plugins/UnityEngine.TestRunner.dll"
+  },
+  {
+   "compression": 8,
+   "hash": "59d035b177af853aa8ee2a78714391dae4657a36",
+   "pkgpath": "bin/UnityMagicLeap.so",
+   "size": 1495008,
+   "src": "C:/Users/Administrator/Documents/GitHub/AR-Circuits/CircuitsAR02-3/Temp/StagingArea/Data/Plugins/UnityMagicLeap.so",
+   "xfrm_flags": {
+    "signed": {
+     "cert": "C:\\Users\\Administrator\\Desktop\\ML-Cert\\ml-test.cert"
+    },
+    "taildata": {
+     "debuggable": true,
+     "sbox": "USER",
+     "version": 3
+    }
+   },
+   "xfrm_hash": "756d38a8e254dc242ae1ae7107efe1fb526661a4",
+   "xfrm_path": "C:/Users/Administrator/Documents/GitHub/AR-Circuits/CircuitsAR02-3/.out/.cache/debug_lumin_clang-3.8_aarch64/com.ecedept.circuitsar1-ad44a5ccb0312814\\UnityMagicLeap.so-ef33c63f249f52d9",
+   "xfrm_size": 1495766
+  },
+  {
+   "compression": 8,
+   "hash": "c304dd41954e030c36437de3b651679e02512d0d",
+   "pkgpath": "bin/libml_camera_plugin.so",
+   "size": 14184,
+   "src": "C:/Users/Administrator/Documents/GitHub/AR-Circuits/CircuitsAR02-3/Temp/StagingArea/Data/Plugins/libml_camera_plugin.so",
+   "xfrm_flags": {
+    "signed": {
+     "cert": "C:\\Users\\Administrator\\Desktop\\ML-Cert\\ml-test.cert"
+    },
+    "taildata": {
+     "debuggable": true,
+     "sbox": "USER",
+     "version": 3
+    }
+   },
+   "xfrm_hash": "d5081ce1857dd398cbc08c250e05bf78d4a51659",
+   "xfrm_path": "C:/Users/Administrator/Documents/GitHub/AR-Circuits/CircuitsAR02-3/.out/.cache/debug_lumin_clang-3.8_aarch64/com.ecedept.circuitsar1-ad44a5ccb0312814\\libml_camera_plugin.so-ef33c63f249f52d9",
+   "xfrm_size": 14942
+  },
+  {
+   "compression": 8,
+   "hash": "6a0b868a47b45da60d66c10ba6a0195b85f54e43",
+   "pkgpath": "bin/libml_mediaplayer_plugin.so",
+   "size": 67624,
+   "src": "C:/Users/Administrator/Documents/GitHub/AR-Circuits/CircuitsAR02-3/Temp/StagingArea/Data/Plugins/libml_mediaplayer_plugin.so",
+   "xfrm_flags": {
+    "signed": {
+     "cert": "C:\\Users\\Administrator\\Desktop\\ML-Cert\\ml-test.cert"
+    },
+    "taildata": {
+     "debuggable": true,
+     "sbox": "USER",
+     "version": 3
+    }
+   },
+   "xfrm_hash": "0da98e103bfc4d1fad14a54bd81bf0f2a8d66407",
+   "xfrm_path": "C:/Users/Administrator/Documents/GitHub/AR-Circuits/CircuitsAR02-3/.out/.cache/debug_lumin_clang-3.8_aarch64/com.ecedept.circuitsar1-ad44a5ccb0312814\\libml_mediaplayer_plugin.so-ef33c63f249f52d9",
+   "xfrm_size": 68382
+  },
+  {
+   "compression": 8,
+   "hash": "984e4d2049ed5491b970ba15d1e8c8cadac0896e",
+   "pkgpath": "bin/nunit.framework.dll",
+   "size": 339968,
+   "src": "C:/Users/Administrator/Documents/GitHub/AR-Circuits/CircuitsAR02-3/Temp/StagingArea/Data/Plugins/nunit.framework.dll"
+  },
+  {
+   "compression": 8,
+   "hash": "e6124da6073b916e29e013cf3ae3f58a4c5fdb0e",
+   "pkgpath": "Data/Resources/mscorlib.dll-resources.dat",
+   "size": 337563,
+   "src": "C:/Users/Administrator/Documents/GitHub/AR-Circuits/CircuitsAR02-3/Temp/StagingArea/Data/Resources/mscorlib.dll-resources.dat"
+  },
+  {
+   "compression": 8,
+   "hash": "63c7ca62020949b1c87b1439f31b7a9719db98c1",
+   "pkgpath": "Data/Resources/unity default resources",
+   "size": 3652028,
+   "src": "C:/Users/Administrator/Documents/GitHub/AR-Circuits/CircuitsAR02-3/Temp/StagingArea/Data/Resources/unity default resources"
+  },
+  {
+   "compression": 8,
+   "hash": "108001e7b7516a1601b6a37481dec716a1045515",
+   "pkgpath": "Data/Resources/unity_builtin_extra",
+   "size": 754740,
+   "src": "C:/Users/Administrator/Documents/GitHub/AR-Circuits/CircuitsAR02-3/Temp/StagingArea/Data/Resources/unity_builtin_extra"
+  },
+  {
+   "compression": 8,
+   "hash": "e1bf33fe041dad27978113c411712e2ec9129591",
+   "pkgpath": "Data/StreamingAssets/Circ1-Base.wmv",
+   "size": 2544991,
+   "src": "C:/Users/Administrator/Documents/GitHub/AR-Circuits/CircuitsAR02-3/Temp/StagingArea/Data/StreamingAssets/Circ1-Base.wmv"
+  },
+  {
+   "compression": 8,
+   "hash": "835f45d15d1ccd8f782883af5c830f1ab18b1e90",
+   "pkgpath": "Data/StreamingAssets/Circ1-Conf1.mp4",
+   "size": 888212,
+   "src": "C:/Users/Administrator/Documents/GitHub/AR-Circuits/CircuitsAR02-3/Temp/StagingArea/Data/StreamingAssets/Circ1-Conf1.mp4"
+  },
+  {
+   "compression": 8,
+   "hash": "10506c7e5f53e331db0e8c7c94047849df023433",
+   "pkgpath": "Data/UnitySubsystems/UnityMagicLeap/UnitySubsystemsManifest.json",
+   "size": 176,
+   "src": "C:/Users/Administrator/Documents/GitHub/AR-Circuits/CircuitsAR02-3/Temp/StagingArea/Data/UnitySubsystems/UnityMagicLeap/UnitySubsystemsManifest.json"
+  },
+  {
+   "compression": 8,
+   "hash": "9f9d9fdfae69214ea57a2416e60a9fe924367caa",
+   "pkgpath": "Data/boot.config",
+   "size": 144,
+   "src": "C:/Users/Administrator/Documents/GitHub/AR-Circuits/CircuitsAR02-3/Temp/StagingArea/Data/boot.config"
+  },
+  {
+   "compression": 8,
+   "hash": "301ca3d5615991e3e44850e8ff6784c4327e392b",
+   "pkgpath": "Data/globalgamemanagers",
+   "size": 45328,
+   "src": "C:/Users/Administrator/Documents/GitHub/AR-Circuits/CircuitsAR02-3/Temp/StagingArea/Data/globalgamemanagers"
+  },
+  {
+   "compression": 8,
+   "hash": "e9fe51711fce102adc3d968251a917de2f398a42",
+   "pkgpath": "Data/globalgamemanagers.assets",
+   "size": 66448,
+   "src": "C:/Users/Administrator/Documents/GitHub/AR-Circuits/CircuitsAR02-3/Temp/StagingArea/Data/globalgamemanagers.assets"
+  },
+  {
+   "compression": 8,
+   "hash": "d5324c5cba565a92ae7d09f169f520706ca7f26b",
+   "pkgpath": "Data/level0",
+   "size": 59232,
+   "src": "C:/Users/Administrator/Documents/GitHub/AR-Circuits/CircuitsAR02-3/Temp/StagingArea/Data/level0"
+  },
+  {
+   "compression": 8,
+   "hash": "066a61cf1e1fe1352eeb40b7a2fa901b8f090566",
+   "pkgpath": "Data/level0.resS",
+   "size": 131232,
+   "src": "C:/Users/Administrator/Documents/GitHub/AR-Circuits/CircuitsAR02-3/Temp/StagingArea/Data/level0.resS"
+  },
+  {
+   "compression": 8,
+   "hash": "238268ebc2b93e3041b3b0c0e1cdaff1fa106f05",
+   "pkgpath": "Data/resources.assets",
+   "size": 12120,
+   "src": "C:/Users/Administrator/Documents/GitHub/AR-Circuits/CircuitsAR02-3/Temp/StagingArea/Data/resources.assets"
+  },
+  {
+   "compression": 8,
+   "hash": "f4ce785d29d24c54555cb4aa9fed0d8d2dee1fad",
+   "pkgpath": "Data/resources.assets.resS",
+   "size": 360480,
+   "src": "C:/Users/Administrator/Documents/GitHub/AR-Circuits/CircuitsAR02-3/Temp/StagingArea/Data/resources.assets.resS"
+  },
+  {
+   "compression": 8,
+   "hash": "15c3d012b8463628166598699c7ec57b525b5664",
+   "pkgpath": "Data/sharedassets0.assets",
+   "size": 4260024,
+   "src": "C:/Users/Administrator/Documents/GitHub/AR-Circuits/CircuitsAR02-3/Temp/StagingArea/Data/sharedassets0.assets"
+  },
+  {
+   "compression": 8,
+   "hash": "2f22090622e15a451df0c4dadb5f6e9c50d2f578",
+   "pkgpath": "Data/sharedassets0.assets.resS",
+   "size": 12739120,
+   "src": "C:/Users/Administrator/Documents/GitHub/AR-Circuits/CircuitsAR02-3/Temp/StagingArea/Data/sharedassets0.assets.resS"
+  },
+  {
+   "compression": 8,
+   "hash": "1573ce786d4d9c0f48e3c08a97d25c8b0d4d58de",
+   "pkgpath": "bin/Player.elf",
+   "size": 20267928,
+   "src": "C:/Users/Administrator/Documents/GitHub/AR-Circuits/CircuitsAR02-3/Temp/StagingArea/Player.elf",
+   "xfrm_flags": {
+    "signed": {
+     "cert": "C:\\Users\\Administrator\\Desktop\\ML-Cert\\ml-test.cert"
+    },
+    "taildata": {
+     "debuggable": true,
+     "sbox": "USER",
+     "version": 3
+    }
+   },
+   "xfrm_hash": "34b0a98109e5c9108e1afdb4990d3e3a22a13e07",
+   "xfrm_path": "C:/Users/Administrator/Documents/GitHub/AR-Circuits/CircuitsAR02-3/.out/.cache/debug_lumin_clang-3.8_aarch64/com.ecedept.circuitsar1-ad44a5ccb0312814\\Player.elf-f0362fd7db66811f",
+   "xfrm_size": 20268686
+  },
+  {
+   "compression": 8,
+   "hash": "5925de9f4d7b83c65d1fd7b25ced5f0bf8c27e73",
+   "pkgpath": "bin/libc++_shared.so",
+   "size": 976832,
+   "src": "C:/Users/Administrator/MagicLeap/mlsdk/v0.21.0/lumin/stl/libc++/lib/libc++_shared.so",
+   "xfrm_flags": {
+    "signed": {
+     "cert": "C:\\Users\\Administrator\\Desktop\\ML-Cert\\ml-test.cert"
+    },
+    "taildata": {
+     "debuggable": true,
+     "sbox": "USER",
+     "version": 3
+    }
+   },
+   "xfrm_hash": "6478ddda30f0e4d373a0eddc4729c6e157a683c3",
+   "xfrm_path": "C:/Users/Administrator/Documents/GitHub/AR-Circuits/CircuitsAR02-3/.out/.cache/debug_lumin_clang-3.8_aarch64/com.ecedept.circuitsar1-ad44a5ccb0312814\\libc++_shared.so-1be7da8afca86903",
+   "xfrm_size": 977590
+  },
+  {
+   "compression": 8,
+   "hash": "293998a4739228211ad18e877ecca803ea45a177",
+   "pkgpath": "manifest.xml",
+   "size": 3566,
+   "src": "C:\\Users\\Administrator\\Documents\\GitHub\\AR-Circuits\\CircuitsAR02-3\\Temp\\StagingArea\\manifest.xml",
+   "xfrm_flags": {
+    "manifest": {
+     "cert_hash": "11b57ecc59ee61b883dab5b693492f5cf4ab41fd",
+     "developer_id": "e67efa2d-45e5-4df9-a958-7dd57e8ea655"
+    }
+   },
+   "xfrm_hash": "92584300484ba5091f9a4783ad39fb96cd621b7c",
+   "xfrm_path": "C:/Users/Administrator/Documents/GitHub/AR-Circuits/CircuitsAR02-3/.out/.cache/debug_lumin_clang-3.8_aarch64/com.ecedept.circuitsar1-ad44a5ccb0312814\\manifest.xml-f0362fd7db66811f",
+   "xfrm_size": 1216
+  }
+ ],
+ "pkgflags": {
+  "signed": {
+   "cert": "C:\\Users\\Administrator\\Desktop\\ML-Cert\\ml-test.cert"
+  },
+  "taildata": {
+   "debuggable": true,
+   "devcert": "C:\\Users\\Administrator\\Desktop\\ML-Cert\\ml-test.cert",
+   "sbox": "USER",
+   "version": 3
+  }
+ }
+}
