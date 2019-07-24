@@ -6,7 +6,7 @@ public class TouchpadGestures : MonoBehaviour
 {
 
     #region Public Variables
-    public Text typeText, stateText, directionText, numberScroller;
+    public Text numberScroller;
     public Camera Camera;
     public bool NumUp;
     #endregion
@@ -52,9 +52,9 @@ public class TouchpadGestures : MonoBehaviour
             NumUp = false;
         }
 
-        typeText.text = "Type: " + gestureType;
+        /*typeText.text = "Type: " + gestureType;
         stateText.text = "State: " + gestureState;
-        directionText.text = "Direction: " + gestureDirection;
+        directionText.text = "Direction: " + gestureDirection;*/
     }
 
     void updateTransform()

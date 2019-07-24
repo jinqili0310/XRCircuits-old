@@ -159,7 +159,7 @@ PlayerSettings:
   androidSupportedAspectRatio: 1
   androidMaxAspectRatio: 2.1
   applicationIdentifier:
-    Lumin: com.ecedept.circuitsar1
+    Lumin: com.ecedept.circuitsar3
   buildNumber: {}
   AndroidBundleVersionCode: 1
   AndroidMinSdkVersion: 16
@@ -628,7 +628,7 @@ PlayerSettings:
     m_ModelFolderPath: 
     m_PortalFolderPath: 
   luminCert:
-    m_CertPath: C:/Users/Administrator/MagicLeap/cert2.cert
+    m_CertPath: C:/Users/Administrator/Desktop/ARCircuits/ML-Cert/ml-test.cert
     m_SignPackage: 1
   luminIsChannelApp: 0
   luminVersion:

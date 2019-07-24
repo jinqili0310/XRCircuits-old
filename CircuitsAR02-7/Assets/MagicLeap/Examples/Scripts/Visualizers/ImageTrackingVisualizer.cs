@@ -39,15 +39,15 @@ namespace MagicLeap
         [SerializeField, Tooltip("Game Object showing the diagram")]
         private GameObject _diagram = null;
         [SerializeField, Tooltip("Game Object showing the video base")]
-        private GameObject _videoBase = null;
+        public GameObject _videoBase = null;
         [SerializeField, Tooltip("Game Object showing the video conf1")]
-        private GameObject _videoConf1 = null;
+        public GameObject _videoConf1 = null;
         [SerializeField, Tooltip("Game Object showing the video conf2")]
-        private GameObject _videoConf2 = null;
+        public GameObject _videoConf2 = null;
         [SerializeField, Tooltip("Game Object showing the video conf3")]
-        private GameObject _videoConf3 = null;
+        public GameObject _videoConf3 = null;
         [SerializeField, Tooltip("Game Object showing the menu")]
-        private GameObject _menu = null;
+        public GameObject _menu = null;
 
         private ImageTrackingExample.ConfigurationStatus _lastConfiguration = ImageTrackingExample.ConfigurationStatus.Base;
         #endregion
