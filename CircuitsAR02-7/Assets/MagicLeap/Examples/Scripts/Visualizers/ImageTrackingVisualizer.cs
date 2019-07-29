@@ -37,7 +37,13 @@ namespace MagicLeap
         [SerializeField, Tooltip("Game Object showing the tracking cube")]
         private GameObject _trackingCube = null;
         [SerializeField, Tooltip("Game Object showing the diagram")]
-        private GameObject _diagram = null;
+        private GameObject _diagramBase = null;
+        [SerializeField, Tooltip("Game Object showing the diagram")]
+        private GameObject _diagramConf1 = null;
+        [SerializeField, Tooltip("Game Object showing the diagram")]
+        private GameObject _diagramConf2 = null;
+        [SerializeField, Tooltip("Game Object showing the diagram")]
+        private GameObject _diagramConf3 = null;
         [SerializeField, Tooltip("Game Object showing the video base")]
         public GameObject _videoBase = null;
         [SerializeField, Tooltip("Game Object showing the video conf1")]
@@ -64,7 +70,25 @@ namespace MagicLeap
                 enabled = false;
                 return;
             }
-            if (null == _diagram)
+            if (null == _diagramBase)
+            {
+                Debug.LogError("Error: ImageTrackingVisualizer._diagram is not set, disabling script.");
+                enabled = false;
+                return;
+            }
+            if (null == _diagramConf1)
+            {
+                Debug.LogError("Error: ImageTrackingVisualizer._diagram is not set, disabling script.");
+                enabled = false;
+                return;
+            }
+            if (null == _diagramConf2)
+            {
+                Debug.LogError("Error: ImageTrackingVisualizer._diagram is not set, disabling script.");
+                enabled = false;
+                return;
+            }
+            if (null == _diagramConf3)
             {
                 Debug.LogError("Error: ImageTrackingVisualizer._diagram is not set, disabling script.");
                 enabled = false;
@@ -160,7 +184,10 @@ namespace MagicLeap
             {
                 case ImageTrackingExample.ConfigurationStatus.Base:
                     _trackingCube.SetActive(_targetFound);
-                    _diagram.SetActive(_targetFound);
+                    _diagramBase.SetActive(_targetFound);
+                    _diagramConf1.SetActive(false);
+                    _diagramConf2.SetActive(false);
+                    _diagramConf3.SetActive(false);
                     _menu.SetActive(_targetFound);
                     _videoBase.SetActive(_targetFound);
                     _videoConf1.SetActive(false);
@@ -169,7 +196,10 @@ namespace MagicLeap
                     break;
                 case ImageTrackingExample.ConfigurationStatus.Configuration1:
                     _trackingCube.SetActive(_targetFound);
-                    _diagram.SetActive(_targetFound);
+                    _diagramBase.SetActive(false);
+                    _diagramConf1.SetActive(_targetFound);
+                    _diagramConf2.SetActive(false);
+                    _diagramConf3.SetActive(false);
                     _menu.SetActive(_targetFound);
                     _videoBase.SetActive(false);
                     _videoConf1.SetActive(_targetFound);
@@ -178,7 +208,10 @@ namespace MagicLeap
                     break;
                 case ImageTrackingExample.ConfigurationStatus.Configuration2:
                     _trackingCube.SetActive(_targetFound);
-                    _diagram.SetActive(_targetFound);
+                    _diagramBase.SetActive(false);
+                    _diagramConf1.SetActive(false);
+                    _diagramConf2.SetActive(_targetFound);
+                    _diagramConf3.SetActive(false);
                     _menu.SetActive(_targetFound);
                     _videoBase.SetActive(false);
                     _videoConf1.SetActive(false);
@@ -187,7 +220,10 @@ namespace MagicLeap
                     break;
                 case ImageTrackingExample.ConfigurationStatus.Configuration3:
                     _trackingCube.SetActive(_targetFound);
-                    _diagram.SetActive(_targetFound);
+                    _diagramBase.SetActive(false);
+                    _diagramConf1.SetActive(false);
+                    _diagramConf2.SetActive(false);
+                    _diagramConf3.SetActive(_targetFound);
                     _menu.SetActive(_targetFound);
                     _videoBase.SetActive(false);
                     _videoConf1.SetActive(false);
