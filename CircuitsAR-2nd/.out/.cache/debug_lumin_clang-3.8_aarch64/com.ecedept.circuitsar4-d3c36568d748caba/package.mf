@@ -1,0 +1,332 @@
+{
+ "entries": [
+  {
+   "compression": 8,
+   "hash": "0ce3741e65942902302e0b8bf4910cf053ea21d2",
+   "pkgpath": "Data/Managed/Metadata/global-metadata.dat",
+   "size": 4003548,
+   "src": "C:/Users/Administrator/Desktop/ARCircuits/CircuitsAR-2nd/Temp/StagingArea/Data/Managed/Metadata/global-metadata.dat"
+  },
+  {
+   "compression": 8,
+   "hash": "ebfd36150150aa2ee3f99633905956f11dfd0d0a",
+   "pkgpath": "bin/libil2cpp.so",
+   "size": 58937568,
+   "src": "C:/Users/Administrator/Desktop/ARCircuits/CircuitsAR-2nd/Temp/StagingArea/Data/Native/libil2cpp.so",
+   "xfrm_flags": {
+    "signed": {
+     "cert": "C:\\Users\\Administrator\\Desktop\\ARCircuits\\certs\\kiki-cert.cert"
+    },
+    "taildata": {
+     "debuggable": true,
+     "sbox": "USER",
+     "version": 3
+    }
+   },
+   "xfrm_hash": "f82f59ccc8a80dcac3de4f3fd4ebf92b48447c2a",
+   "xfrm_path": "C:/Users/Administrator/Desktop/ARCircuits/CircuitsAR-2nd/.out/.cache/debug_lumin_clang-3.8_aarch64/com.ecedept.circuitsar4-d3c36568d748caba\\libil2cpp.so-ab5492744737a6b8",
+   "xfrm_size": 58938326
+  },
+  {
+   "compression": 8,
+   "hash": "6b3b1067e8eeb28457c572292a209cc931e93089",
+   "pkgpath": "bin/AudioPluginMSASpatializer.so",
+   "size": 269360,
+   "src": "C:/Users/Administrator/Desktop/ARCircuits/CircuitsAR-2nd/Temp/StagingArea/Data/Plugins/AudioPluginMSASpatializer.so",
+   "xfrm_flags": {
+    "signed": {
+     "cert": "C:\\Users\\Administrator\\Desktop\\ARCircuits\\certs\\kiki-cert.cert"
+    },
+    "taildata": {
+     "debuggable": true,
+     "sbox": "USER",
+     "version": 3
+    }
+   },
+   "xfrm_hash": "5834c8f2a055eb9e2851e556ca5fd8ba46a61e3c",
+   "xfrm_path": "C:/Users/Administrator/Desktop/ARCircuits/CircuitsAR-2nd/.out/.cache/debug_lumin_clang-3.8_aarch64/com.ecedept.circuitsar4-d3c36568d748caba\\AudioPluginMSASpatializer.so-1145d6ea8c7180ec",
+   "xfrm_size": 270118
+  },
+  {
+   "compression": 8,
+   "hash": "f16240591751cab0078e249a2a55a3aaa3e957fc",
+   "pkgpath": "bin/UnityEngine.TestRunner.dll",
+   "size": 100864,
+   "src": "C:/Users/Administrator/Desktop/ARCircuits/CircuitsAR-2nd/Temp/StagingArea/Data/Plugins/UnityEngine.TestRunner.dll"
+  },
+  {
+   "compression": 8,
+   "hash": "59d035b177af853aa8ee2a78714391dae4657a36",
+   "pkgpath": "bin/UnityMagicLeap.so",
+   "size": 1495008,
+   "src": "C:/Users/Administrator/Desktop/ARCircuits/CircuitsAR-2nd/Temp/StagingArea/Data/Plugins/UnityMagicLeap.so",
+   "xfrm_flags": {
+    "signed": {
+     "cert": "C:\\Users\\Administrator\\Desktop\\ARCircuits\\certs\\kiki-cert.cert"
+    },
+    "taildata": {
+     "debuggable": true,
+     "sbox": "USER",
+     "version": 3
+    }
+   },
+   "xfrm_hash": "5c4b8ac25905ac1266af91bade64d3db602688d4",
+   "xfrm_path": "C:/Users/Administrator/Desktop/ARCircuits/CircuitsAR-2nd/.out/.cache/debug_lumin_clang-3.8_aarch64/com.ecedept.circuitsar4-d3c36568d748caba\\UnityMagicLeap.so-1145d6ea8c7180ec",
+   "xfrm_size": 1495766
+  },
+  {
+   "compression": 8,
+   "hash": "c304dd41954e030c36437de3b651679e02512d0d",
+   "pkgpath": "bin/libml_camera_plugin.so",
+   "size": 14184,
+   "src": "C:/Users/Administrator/Desktop/ARCircuits/CircuitsAR-2nd/Temp/StagingArea/Data/Plugins/libml_camera_plugin.so",
+   "xfrm_flags": {
+    "signed": {
+     "cert": "C:\\Users\\Administrator\\Desktop\\ARCircuits\\certs\\kiki-cert.cert"
+    },
+    "taildata": {
+     "debuggable": true,
+     "sbox": "USER",
+     "version": 3
+    }
+   },
+   "xfrm_hash": "a0e3ee65b5cc9f2a3c8e6404e1741c056d15352c",
+   "xfrm_path": "C:/Users/Administrator/Desktop/ARCircuits/CircuitsAR-2nd/.out/.cache/debug_lumin_clang-3.8_aarch64/com.ecedept.circuitsar4-d3c36568d748caba\\libml_camera_plugin.so-1145d6ea8c7180ec",
+   "xfrm_size": 14942
+  },
+  {
+   "compression": 8,
+   "hash": "6a0b868a47b45da60d66c10ba6a0195b85f54e43",
+   "pkgpath": "bin/libml_mediaplayer_plugin.so",
+   "size": 67624,
+   "src": "C:/Users/Administrator/Desktop/ARCircuits/CircuitsAR-2nd/Temp/StagingArea/Data/Plugins/libml_mediaplayer_plugin.so",
+   "xfrm_flags": {
+    "signed": {
+     "cert": "C:\\Users\\Administrator\\Desktop\\ARCircuits\\certs\\kiki-cert.cert"
+    },
+    "taildata": {
+     "debuggable": true,
+     "sbox": "USER",
+     "version": 3
+    }
+   },
+   "xfrm_hash": "708c74157c259715d40e5c33a5d6cc8b055de675",
+   "xfrm_path": "C:/Users/Administrator/Desktop/ARCircuits/CircuitsAR-2nd/.out/.cache/debug_lumin_clang-3.8_aarch64/com.ecedept.circuitsar4-d3c36568d748caba\\libml_mediaplayer_plugin.so-1145d6ea8c7180ec",
+   "xfrm_size": 68382
+  },
+  {
+   "compression": 8,
+   "hash": "984e4d2049ed5491b970ba15d1e8c8cadac0896e",
+   "pkgpath": "bin/nunit.framework.dll",
+   "size": 339968,
+   "src": "C:/Users/Administrator/Desktop/ARCircuits/CircuitsAR-2nd/Temp/StagingArea/Data/Plugins/nunit.framework.dll"
+  },
+  {
+   "compression": 8,
+   "hash": "e6124da6073b916e29e013cf3ae3f58a4c5fdb0e",
+   "pkgpath": "Data/Resources/mscorlib.dll-resources.dat",
+   "size": 337563,
+   "src": "C:/Users/Administrator/Desktop/ARCircuits/CircuitsAR-2nd/Temp/StagingArea/Data/Resources/mscorlib.dll-resources.dat"
+  },
+  {
+   "compression": 8,
+   "hash": "63c7ca62020949b1c87b1439f31b7a9719db98c1",
+   "pkgpath": "Data/Resources/unity default resources",
+   "size": 3652028,
+   "src": "C:/Users/Administrator/Desktop/ARCircuits/CircuitsAR-2nd/Temp/StagingArea/Data/Resources/unity default resources"
+  },
+  {
+   "compression": 8,
+   "hash": "9c080914ee6f4b2c7c72fb6456a90c1d514f1a2f",
+   "pkgpath": "Data/Resources/unity_builtin_extra",
+   "size": 754668,
+   "src": "C:/Users/Administrator/Desktop/ARCircuits/CircuitsAR-2nd/Temp/StagingArea/Data/Resources/unity_builtin_extra"
+  },
+  {
+   "compression": 8,
+   "hash": "10506c7e5f53e331db0e8c7c94047849df023433",
+   "pkgpath": "Data/UnitySubsystems/UnityMagicLeap/UnitySubsystemsManifest.json",
+   "size": 176,
+   "src": "C:/Users/Administrator/Desktop/ARCircuits/CircuitsAR-2nd/Temp/StagingArea/Data/UnitySubsystems/UnityMagicLeap/UnitySubsystemsManifest.json"
+  },
+  {
+   "compression": 8,
+   "hash": "8054ebca2d0ec11c24ab276327b7d789938d9f1f",
+   "pkgpath": "Data/boot.config",
+   "size": 304,
+   "src": "C:/Users/Administrator/Desktop/ARCircuits/CircuitsAR-2nd/Temp/StagingArea/Data/boot.config"
+  },
+  {
+   "compression": 8,
+   "hash": "d9c8545c2425e5c82f0b927af48702c883b16fd0",
+   "pkgpath": "Data/globalgamemanagers",
+   "size": 43992,
+   "src": "C:/Users/Administrator/Desktop/ARCircuits/CircuitsAR-2nd/Temp/StagingArea/Data/globalgamemanagers"
+  },
+  {
+   "compression": 8,
+   "hash": "8bafd5864f7ab1d0b0d66bbf9a58eeee670ed322",
+   "pkgpath": "Data/globalgamemanagers.assets",
+   "size": 47880,
+   "src": "C:/Users/Administrator/Desktop/ARCircuits/CircuitsAR-2nd/Temp/StagingArea/Data/globalgamemanagers.assets"
+  },
+  {
+   "compression": 8,
+   "hash": "4f12f229d3a77d06657d599e2a3daa1e1018afb4",
+   "pkgpath": "Data/level0",
+   "size": 22060,
+   "src": "C:/Users/Administrator/Desktop/ARCircuits/CircuitsAR-2nd/Temp/StagingArea/Data/level0"
+  },
+  {
+   "compression": 8,
+   "hash": "edcd88c9591be369cccee4231303663d079b7e15",
+   "pkgpath": "Data/level1",
+   "size": 108304,
+   "src": "C:/Users/Administrator/Desktop/ARCircuits/CircuitsAR-2nd/Temp/StagingArea/Data/level1"
+  },
+  {
+   "compression": 8,
+   "hash": "066a61cf1e1fe1352eeb40b7a2fa901b8f090566",
+   "pkgpath": "Data/level1.resS",
+   "size": 131232,
+   "src": "C:/Users/Administrator/Desktop/ARCircuits/CircuitsAR-2nd/Temp/StagingArea/Data/level1.resS"
+  },
+  {
+   "compression": 8,
+   "hash": "201d5caf39f90aa9a776536ec20b38c38a317e60",
+   "pkgpath": "Data/level2",
+   "size": 84528,
+   "src": "C:/Users/Administrator/Desktop/ARCircuits/CircuitsAR-2nd/Temp/StagingArea/Data/level2"
+  },
+  {
+   "compression": 8,
+   "hash": "066a61cf1e1fe1352eeb40b7a2fa901b8f090566",
+   "pkgpath": "Data/level2.resS",
+   "size": 131232,
+   "src": "C:/Users/Administrator/Desktop/ARCircuits/CircuitsAR-2nd/Temp/StagingArea/Data/level2.resS"
+  },
+  {
+   "compression": 8,
+   "hash": "1c6a9ff4673be5c83778b23f1d3ff677f54a96fc",
+   "pkgpath": "Data/resources.assets",
+   "size": 19144,
+   "src": "C:/Users/Administrator/Desktop/ARCircuits/CircuitsAR-2nd/Temp/StagingArea/Data/resources.assets"
+  },
+  {
+   "compression": 8,
+   "hash": "f4ce785d29d24c54555cb4aa9fed0d8d2dee1fad",
+   "pkgpath": "Data/resources.assets.resS",
+   "size": 360480,
+   "src": "C:/Users/Administrator/Desktop/ARCircuits/CircuitsAR-2nd/Temp/StagingArea/Data/resources.assets.resS"
+  },
+  {
+   "compression": 8,
+   "hash": "77ab24410a46e182aefdc28c082e8fe09ac91b84",
+   "pkgpath": "Data/sharedassets0.assets",
+   "size": 1505928,
+   "src": "C:/Users/Administrator/Desktop/ARCircuits/CircuitsAR-2nd/Temp/StagingArea/Data/sharedassets0.assets"
+  },
+  {
+   "compression": 8,
+   "hash": "b13c99db0ef3ab2b7321b4d01a1dd96796f30df0",
+   "pkgpath": "Data/sharedassets0.assets.resS",
+   "size": 8981976,
+   "src": "C:/Users/Administrator/Desktop/ARCircuits/CircuitsAR-2nd/Temp/StagingArea/Data/sharedassets0.assets.resS"
+  },
+  {
+   "compression": 8,
+   "hash": "fcb1026a98e3aa23f3783b3fc96e8b1d0371948e",
+   "pkgpath": "Data/sharedassets1.assets",
+   "size": 1562604,
+   "src": "C:/Users/Administrator/Desktop/ARCircuits/CircuitsAR-2nd/Temp/StagingArea/Data/sharedassets1.assets"
+  },
+  {
+   "compression": 8,
+   "hash": "6fdf375e6fdb4c9cad34652fe375bbae8dfc431b",
+   "pkgpath": "Data/sharedassets1.assets.resS",
+   "size": 13823508,
+   "src": "C:/Users/Administrator/Desktop/ARCircuits/CircuitsAR-2nd/Temp/StagingArea/Data/sharedassets1.assets.resS"
+  },
+  {
+   "compression": 8,
+   "hash": "905a2635cebd86dee1b8d674945608d95929d3de",
+   "pkgpath": "Data/sharedassets2.assets",
+   "size": 10380,
+   "src": "C:/Users/Administrator/Desktop/ARCircuits/CircuitsAR-2nd/Temp/StagingArea/Data/sharedassets2.assets"
+  },
+  {
+   "compression": 8,
+   "hash": "a5aa7eb5f2099aae94e6f52a2265472537b89b38",
+   "pkgpath": "Data/sharedassets2.assets.resS",
+   "size": 774084,
+   "src": "C:/Users/Administrator/Desktop/ARCircuits/CircuitsAR-2nd/Temp/StagingArea/Data/sharedassets2.assets.resS"
+  },
+  {
+   "compression": 8,
+   "hash": "864de483f4084b04b5d2db8bb126550b09b1bcd1",
+   "pkgpath": "bin/Player.elf",
+   "size": 48673592,
+   "src": "C:/Users/Administrator/Desktop/ARCircuits/CircuitsAR-2nd/Temp/StagingArea/Player.elf",
+   "xfrm_flags": {
+    "signed": {
+     "cert": "C:\\Users\\Administrator\\Desktop\\ARCircuits\\certs\\kiki-cert.cert"
+    },
+    "taildata": {
+     "debuggable": true,
+     "sbox": "USER",
+     "version": 3
+    }
+   },
+   "xfrm_hash": "34a9c24f978991d4fff69273eeb3a7376a0d565e",
+   "xfrm_path": "C:/Users/Administrator/Desktop/ARCircuits/CircuitsAR-2nd/.out/.cache/debug_lumin_clang-3.8_aarch64/com.ecedept.circuitsar4-d3c36568d748caba\\Player.elf-95eaa29019029640",
+   "xfrm_size": 48674350
+  },
+  {
+   "compression": 8,
+   "hash": "5925de9f4d7b83c65d1fd7b25ced5f0bf8c27e73",
+   "pkgpath": "bin/libc++_shared.so",
+   "size": 976832,
+   "src": "C:/Users/Administrator/MagicLeap/mlsdk/v0.21.0/lumin/stl/libc++/lib/libc++_shared.so",
+   "xfrm_flags": {
+    "signed": {
+     "cert": "C:\\Users\\Administrator\\Desktop\\ARCircuits\\certs\\kiki-cert.cert"
+    },
+    "taildata": {
+     "debuggable": true,
+     "sbox": "USER",
+     "version": 3
+    }
+   },
+   "xfrm_hash": "fdd1292c9f305053785e92a54cc7b07023fb0112",
+   "xfrm_path": "C:/Users/Administrator/Desktop/ARCircuits/CircuitsAR-2nd/.out/.cache/debug_lumin_clang-3.8_aarch64/com.ecedept.circuitsar4-d3c36568d748caba\\libc++_shared.so-1be7da8afca86903",
+   "xfrm_size": 977590
+  },
+  {
+   "compression": 8,
+   "hash": "4e33a61823248908c7598051159def9532f424dc",
+   "pkgpath": "manifest.xml",
+   "size": 3566,
+   "src": "C:\\Users\\Administrator\\Desktop\\ARCircuits\\CircuitsAR-2nd\\Temp\\StagingArea\\manifest.xml",
+   "xfrm_flags": {
+    "manifest": {
+     "cert_hash": "cd4b379c144c04fb7620ea84032031a5c3035c32",
+     "developer_id": "e67efa2d-45e5-4df9-a958-7dd57e8ea655"
+    }
+   },
+   "xfrm_hash": "a965145a9361d8e447fe48b9a1e742a0c3cc5caf",
+   "xfrm_path": "C:/Users/Administrator/Desktop/ARCircuits/CircuitsAR-2nd/.out/.cache/debug_lumin_clang-3.8_aarch64/com.ecedept.circuitsar4-d3c36568d748caba\\manifest.xml-95eaa29019029640",
+   "xfrm_size": 1216
+  }
+ ],
+ "pkgflags": {
+  "signed": {
+   "cert": "C:\\Users\\Administrator\\Desktop\\ARCircuits\\certs\\kiki-cert.cert"
+  },
+  "taildata": {
+   "debuggable": true,
+   "devcert": "C:\\Users\\Administrator\\Desktop\\ARCircuits\\certs\\kiki-cert.cert",
+   "sbox": "USER",
+   "version": 3
+  }
+ }
+}

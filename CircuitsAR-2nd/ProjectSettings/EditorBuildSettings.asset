@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Home.unity
+    guid: 14b647d056779a449a215a8db033434b
+  - enabled: 1
+    path: Assets/Scenes/KCLMode.unity
+    guid: b20b7826b9898054ebd2ef864bf1013f
+  - enabled: 1
+    path: Assets/Scenes/TEMode.unity
+    guid: d32d76598e2181c43a7954ae250d20c4
+  - enabled: 0
+    path: Assets/MagicLeap/Examples/Scenes/MediaPlayer.unity
+    guid: b08c428ac5e0b41158b0d405bc436f75
+  - enabled: 0
+    path: Assets/MagicLeap/Examples/Scenes/InputModule.unity
+    guid: 1791969e13b627c49afd5bfc3433fdee
+  m_configObjects: {}

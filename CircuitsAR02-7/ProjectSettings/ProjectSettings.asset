@@ -628,7 +628,7 @@ PlayerSettings:
     m_ModelFolderPath: 
     m_PortalFolderPath: 
   luminCert:
-    m_CertPath: C:/Users/Administrator/Desktop/ARCircuits/ML-Cert/ml-test.cert
+    m_CertPath: C:/Users/Administrator/Desktop/certs/kiki-cert.cert
     m_SignPackage: 1
   luminIsChannelApp: 0
   luminVersion:

@@ -9,13 +9,13 @@
   },
   {
    "compression": 8,
-   "hash": "fbc31bdcec9c2852e3bc461af3a4492e75e68695",
+   "hash": "495e93520248d7e088c5bbf55744e406db831fc5",
    "pkgpath": "bin/libil2cpp.so",
    "size": 58898624,
    "src": "C:/Users/Administrator/Desktop/ARCircuits/CircuitsAR02-7/Temp/StagingArea/Data/Native/libil2cpp.so",
    "xfrm_flags": {
     "signed": {
-     "cert": "C:\\Users\\Administrator\\Desktop\\ARCircuits\\ML-Cert\\ml-test.cert"
+     "cert": "C:\\Users\\Administrator\\Desktop\\certs\\kiki-cert.cert"
     },
     "taildata": {
      "debuggable": true,
@@ -23,7 +23,7 @@
      "version": 3
     }
    },
-   "xfrm_hash": "f686c579c85644380f1ab42aee05135eb23e5b5c",
+   "xfrm_hash": "357887883c10e7a6813045930e9e2cab266a139c",
    "xfrm_path": "C:/Users/Administrator/Desktop/ARCircuits/CircuitsAR02-7/.out/.cache/debug_lumin_clang-3.8_aarch64/com.ecedept.circuitsar4-111c39219cdf0eae\\libil2cpp.so-c0add7b6dcc7397e",
    "xfrm_size": 58899382
   },
@@ -35,7 +35,7 @@
    "src": "C:/Users/Administrator/Desktop/ARCircuits/CircuitsAR02-7/Temp/StagingArea/Data/Plugins/AudioPluginMSASpatializer.so",
    "xfrm_flags": {
     "signed": {
-     "cert": "C:\\Users\\Administrator\\Desktop\\ARCircuits\\ML-Cert\\ml-test.cert"
+     "cert": "C:\\Users\\Administrator\\Desktop\\certs\\kiki-cert.cert"
     },
     "taildata": {
      "debuggable": true,
@@ -43,7 +43,7 @@
      "version": 3
     }
    },
-   "xfrm_hash": "bc2651833d86e26cf5ab048ec31466037f002f53",
+   "xfrm_hash": "5834c8f2a055eb9e2851e556ca5fd8ba46a61e3c",
    "xfrm_path": "C:/Users/Administrator/Desktop/ARCircuits/CircuitsAR02-7/.out/.cache/debug_lumin_clang-3.8_aarch64/com.ecedept.circuitsar4-111c39219cdf0eae\\AudioPluginMSASpatializer.so-2d850eba3108f065",
    "xfrm_size": 270118
   },
@@ -62,7 +62,7 @@
    "src": "C:/Users/Administrator/Desktop/ARCircuits/CircuitsAR02-7/Temp/StagingArea/Data/Plugins/UnityMagicLeap.so",
    "xfrm_flags": {
     "signed": {
-     "cert": "C:\\Users\\Administrator\\Desktop\\ARCircuits\\ML-Cert\\ml-test.cert"
+     "cert": "C:\\Users\\Administrator\\Desktop\\certs\\kiki-cert.cert"
     },
     "taildata": {
      "debuggable": true,
@@ -70,7 +70,7 @@
      "version": 3
     }
    },
-   "xfrm_hash": "756d38a8e254dc242ae1ae7107efe1fb526661a4",
+   "xfrm_hash": "5c4b8ac25905ac1266af91bade64d3db602688d4",
    "xfrm_path": "C:/Users/Administrator/Desktop/ARCircuits/CircuitsAR02-7/.out/.cache/debug_lumin_clang-3.8_aarch64/com.ecedept.circuitsar4-111c39219cdf0eae\\UnityMagicLeap.so-2d850eba3108f065",
    "xfrm_size": 1495766
   },
@@ -82,7 +82,7 @@
    "src": "C:/Users/Administrator/Desktop/ARCircuits/CircuitsAR02-7/Temp/StagingArea/Data/Plugins/libml_camera_plugin.so",
    "xfrm_flags": {
     "signed": {
-     "cert": "C:\\Users\\Administrator\\Desktop\\ARCircuits\\ML-Cert\\ml-test.cert"
+     "cert": "C:\\Users\\Administrator\\Desktop\\certs\\kiki-cert.cert"
     },
     "taildata": {
      "debuggable": true,
@@ -90,7 +90,7 @@
      "version": 3
     }
    },
-   "xfrm_hash": "d5081ce1857dd398cbc08c250e05bf78d4a51659",
+   "xfrm_hash": "a0e3ee65b5cc9f2a3c8e6404e1741c056d15352c",
    "xfrm_path": "C:/Users/Administrator/Desktop/ARCircuits/CircuitsAR02-7/.out/.cache/debug_lumin_clang-3.8_aarch64/com.ecedept.circuitsar4-111c39219cdf0eae\\libml_camera_plugin.so-2d850eba3108f065",
    "xfrm_size": 14942
   },
@@ -102,7 +102,7 @@
    "src": "C:/Users/Administrator/Desktop/ARCircuits/CircuitsAR02-7/Temp/StagingArea/Data/Plugins/libml_mediaplayer_plugin.so",
    "xfrm_flags": {
     "signed": {
-     "cert": "C:\\Users\\Administrator\\Desktop\\ARCircuits\\ML-Cert\\ml-test.cert"
+     "cert": "C:\\Users\\Administrator\\Desktop\\certs\\kiki-cert.cert"
     },
     "taildata": {
      "debuggable": true,
@@ -110,7 +110,7 @@
      "version": 3
     }
    },
-   "xfrm_hash": "0da98e103bfc4d1fad14a54bd81bf0f2a8d66407",
+   "xfrm_hash": "708c74157c259715d40e5c33a5d6cc8b055de675",
    "xfrm_path": "C:/Users/Administrator/Desktop/ARCircuits/CircuitsAR02-7/.out/.cache/debug_lumin_clang-3.8_aarch64/com.ecedept.circuitsar4-111c39219cdf0eae\\libml_mediaplayer_plugin.so-2d850eba3108f065",
    "xfrm_size": 68382
   },
@@ -151,16 +151,16 @@
   },
   {
    "compression": 8,
-   "hash": "11bc5808dddfbe772085c60a4ab221eb3296c071",
+   "hash": "43389158c0ae5a7e278e368024a75ea6d1116a79",
    "pkgpath": "Data/boot.config",
    "size": 305,
    "src": "C:/Users/Administrator/Desktop/ARCircuits/CircuitsAR02-7/Temp/StagingArea/Data/boot.config"
   },
   {
    "compression": 8,
-   "hash": "d44bed201f2a6bde1f2fd836bfa06f542362c6ce",
+   "hash": "d3bb3e0ff3a7025d78bb1b93cc86c2eff27f3a4b",
    "pkgpath": "Data/globalgamemanagers",
-   "size": 43720,
+   "size": 43704,
    "src": "C:/Users/Administrator/Desktop/ARCircuits/CircuitsAR02-7/Temp/StagingArea/Data/globalgamemanagers"
   },
   {
@@ -172,7 +172,7 @@
   },
   {
    "compression": 8,
-   "hash": "e96facf61cea2d5fc1fc8c1f57412add14f43f46",
+   "hash": "1b02cce0df06d9e381b19fa8a9adc286365c7fbf",
    "pkgpath": "Data/level0",
    "size": 106472,
    "src": "C:/Users/Administrator/Desktop/ARCircuits/CircuitsAR02-7/Temp/StagingArea/Data/level0"
@@ -220,7 +220,7 @@
    "src": "C:/Users/Administrator/Desktop/ARCircuits/CircuitsAR02-7/Temp/StagingArea/Player.elf",
    "xfrm_flags": {
     "signed": {
-     "cert": "C:\\Users\\Administrator\\Desktop\\ARCircuits\\ML-Cert\\ml-test.cert"
+     "cert": "C:\\Users\\Administrator\\Desktop\\certs\\kiki-cert.cert"
     },
     "taildata": {
      "debuggable": true,
@@ -228,7 +228,7 @@
      "version": 3
     }
    },
-   "xfrm_hash": "5dc9858b47c9618e163197b0c1d3a7c4d51c5448",
+   "xfrm_hash": "34a9c24f978991d4fff69273eeb3a7376a0d565e",
    "xfrm_path": "C:/Users/Administrator/Desktop/ARCircuits/CircuitsAR02-7/.out/.cache/debug_lumin_clang-3.8_aarch64/com.ecedept.circuitsar4-111c39219cdf0eae\\Player.elf-61ff9c397e08a78d",
    "xfrm_size": 48674350
   },
@@ -240,7 +240,7 @@
    "src": "C:/Users/Administrator/MagicLeap/mlsdk/v0.21.0/lumin/stl/libc++/lib/libc++_shared.so",
    "xfrm_flags": {
     "signed": {
-     "cert": "C:\\Users\\Administrator\\Desktop\\ARCircuits\\ML-Cert\\ml-test.cert"
+     "cert": "C:\\Users\\Administrator\\Desktop\\certs\\kiki-cert.cert"
     },
     "taildata": {
      "debuggable": true,
@@ -248,7 +248,7 @@
      "version": 3
     }
    },
-   "xfrm_hash": "6478ddda30f0e4d373a0eddc4729c6e157a683c3",
+   "xfrm_hash": "fdd1292c9f305053785e92a54cc7b07023fb0112",
    "xfrm_path": "C:/Users/Administrator/Desktop/ARCircuits/CircuitsAR02-7/.out/.cache/debug_lumin_clang-3.8_aarch64/com.ecedept.circuitsar4-111c39219cdf0eae\\libc++_shared.so-1be7da8afca86903",
    "xfrm_size": 977590
   },
@@ -260,7 +260,7 @@
    "src": "C:\\Users\\Administrator\\Desktop\\ARCircuits\\CircuitsAR02-7\\Temp\\StagingArea\\manifest.xml",
    "xfrm_flags": {
     "manifest": {
-     "cert_hash": "11b57ecc59ee61b883dab5b693492f5cf4ab41fd",
+     "cert_hash": "cd4b379c144c04fb7620ea84032031a5c3035c32",
      "developer_id": "e67efa2d-45e5-4df9-a958-7dd57e8ea655"
     }
    },
@@ -271,11 +271,11 @@
  ],
  "pkgflags": {
   "signed": {
-   "cert": "C:\\Users\\Administrator\\Desktop\\ARCircuits\\ML-Cert\\ml-test.cert"
+   "cert": "C:\\Users\\Administrator\\Desktop\\certs\\kiki-cert.cert"
   },
   "taildata": {
    "debuggable": true,
-   "devcert": "C:\\Users\\Administrator\\Desktop\\ARCircuits\\ML-Cert\\ml-test.cert",
+   "devcert": "C:\\Users\\Administrator\\Desktop\\certs\\kiki-cert.cert",
    "sbox": "USER",
    "version": 3
   }
