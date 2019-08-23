@@ -59,9 +59,9 @@ namespace MagicLeap
 
         protected override void OnDisable()
         {
-            //OnControllerTriggerDown -= HandleTriggerDown;
+            OnControllerTriggerDown -= HandleTriggerDown;
 
-            //base.OnDisable();
+            base.OnDisable();
         }
         #endregion
 

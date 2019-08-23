@@ -25,40 +25,28 @@ namespace MagicLeap
     public class ImageTrackingExample : MonoBehaviour
     {
         #region Public Enum
-        /* public enum ViewMode : int
+        public enum ViewMode : int
         {
             All = 0,
+            AxisOnly,
             TrackingCubeOnly,
-            DiagramOnly,
-            VideoOnly,
-            MenuOnly,
-            Disabled,
-        } */
-
-        public enum ConfigurationStatus : int
-        {
-            Base = 0,
-            Configuration1,
-            Configuration2,
-            Configuration3,
+            DemoOnly,
         }
 
         public GameObject[] TrackerBehaviours;
         #endregion
 
         #region Private Variables
-        //private ViewMode _viewMode = ViewMode.All;
-
-        private ConfigurationStatus _configurationStatus = ConfigurationStatus.Base;
+        private ViewMode _viewMode = ViewMode.All;
 
         [SerializeField, Tooltip("Image Tracking Visualizers to control")]
         private ImageTrackingVisualizer [] _visualizers = null;
 
-        [SerializeField, Tooltip("The Configuration text.")]
-        private Text _configurationLabel = null;
+        [SerializeField, Tooltip("The View Mode text.")]
+        private Text _viewModeLabel = null;
 
-        //[SerializeField, Tooltip("The Tracker Status text.")]
-        //private Text _trackerStatusLabel = null;
+        [SerializeField, Tooltip("The Tracker Status text.")]
+        private Text _trackerStatusLabel = null;
 
         [Space, SerializeField, Tooltip("ControllerConnectionHandler reference.")]
         private ControllerConnectionHandler _controllerConnectionHandler = null;
@@ -114,9 +102,9 @@ namespace MagicLeap
                 MLInput.OnControllerButtonDown -= HandleOnButtonDown;
                 MLInput.OnTriggerDown -= HandleOnTriggerDown;
 
-                //UpdateImageTrackerBehaviours(false);
+                UpdateImageTrackerBehaviours(false);
 
-                //_hasStarted = false;
+                _hasStarted = false;
             }
         }
         #endregion
@@ -129,7 +117,7 @@ namespace MagicLeap
         {
             foreach (ImageTrackingVisualizer visualizer in _visualizers)
             {
-                visualizer.UpdateConfigurationStatus(_configurationStatus);
+                visualizer.UpdateViewMode(_viewMode);
             }
         }
 
@@ -160,18 +148,18 @@ namespace MagicLeap
                     enabled = false;
                     return;
                 }
-                if (_configurationLabel == null)
+                if (_viewModeLabel == null)
                 {
-                    Debug.LogError("Error: ImageTrackingExample._configurationLabel is not set, disabling script.");
+                    Debug.LogError("Error: ImageTrackingExample._viewModeLabel is not set, disabling script.");
                     enabled = false;
                     return;
                 }
-                //if (_trackerStatusLabel == null)
-                //{
-                    //Debug.LogError("Error: ImageTrackingExample._trackerStatusLabel is not set, disabling script.");
-                    //enabled = false;
-                    //return;
-                //}
+                if (_trackerStatusLabel == null)
+                {
+                    Debug.LogError("Error: ImageTrackingExample._trackerStatusLabel is not set, disabling script.");
+                    enabled = false;
+                    return;
+                }
 
                 MLInput.OnControllerButtonDown += HandleOnButtonDown;
                 MLInput.OnTriggerDown += HandleOnTriggerDown;
@@ -215,13 +203,13 @@ namespace MagicLeap
             {
                 if (MLImageTracker.GetTrackerStatus())
                 {
-                    //MLImageTracker.Disable();
-                    //_trackerStatusLabel.text = "Tracker Status: Disabled";
+                    MLImageTracker.Disable();
+                    _trackerStatusLabel.text = "Tracker Status: Disabled";
                 }
                 else
                 {
                     MLImageTracker.Enable();
-                    //_trackerStatusLabel.text = "Tracker Status: Enabled";
+                    _trackerStatusLabel.text = "Tracker Status: Enabled";
                 }
             }
         }
@@ -235,8 +223,8 @@ namespace MagicLeap
         {
             if (_controllerConnectionHandler.IsControllerValid(controllerId) && button == MLInputControllerButton.Bumper)
             {
-                _configurationStatus = (ConfigurationStatus)((int)(_configurationStatus + 1) % Enum.GetNames(typeof(ConfigurationStatus)).Length);
-                _configurationLabel.text = string.Format("Configuration Status: {0}", _configurationStatus.ToString());
+                _viewMode = (ViewMode)((int)(_viewMode + 1) % Enum.GetNames(typeof(ViewMode)).Length);
+                _viewModeLabel.text = string.Format("View Mode: {0}", _viewMode.ToString());
             }
             UpdateVisualizers();
         }

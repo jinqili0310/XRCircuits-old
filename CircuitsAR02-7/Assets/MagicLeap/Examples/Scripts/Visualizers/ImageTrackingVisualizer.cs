@@ -34,28 +34,14 @@ namespace MagicLeap
         private string _prefix;
         private string _eventString;
 
+        [SerializeField, Tooltip("Game Object showing the axis")]
+        private GameObject _axis = null;
         [SerializeField, Tooltip("Game Object showing the tracking cube")]
         private GameObject _trackingCube = null;
-        [SerializeField, Tooltip("Game Object showing the diagram")]
-        private GameObject _diagramBase = null;
-        [SerializeField, Tooltip("Game Object showing the diagram")]
-        private GameObject _diagramConf1 = null;
-        [SerializeField, Tooltip("Game Object showing the diagram")]
-        private GameObject _diagramConf2 = null;
-        [SerializeField, Tooltip("Game Object showing the diagram")]
-        private GameObject _diagramConf3 = null;
-        [SerializeField, Tooltip("Game Object showing the video base")]
-        public GameObject _videoBase = null;
-        [SerializeField, Tooltip("Game Object showing the video conf1")]
-        public GameObject _videoConf1 = null;
-        [SerializeField, Tooltip("Game Object showing the video conf2")]
-        public GameObject _videoConf2 = null;
-        [SerializeField, Tooltip("Game Object showing the video conf3")]
-        public GameObject _videoConf3 = null;
-        [SerializeField, Tooltip("Game Object showing the menu")]
-        public GameObject _menu = null;
+        [SerializeField, Tooltip("Game Object showing the demo")]
+        private GameObject _demo = null;
 
-        private ImageTrackingExample.ConfigurationStatus _lastConfiguration = ImageTrackingExample.ConfigurationStatus.Base;
+        private ImageTrackingExample.ViewMode _lastViewMode = ImageTrackingExample.ViewMode.All;
         #endregion
 
         #region Unity Methods
@@ -64,63 +50,21 @@ namespace MagicLeap
         /// </summary>
         void Awake()
         {
+            if (null == _axis)
+            {
+                Debug.LogError("Error: ImageTrackingVisualizer._axis is not set, disabling script.");
+                enabled = false;
+                return;
+            }
             if (null == _trackingCube)
             {
                 Debug.LogError("Error: ImageTrackingVisualizer._trackingCube is not set, disabling script.");
                 enabled = false;
                 return;
             }
-            if (null == _diagramBase)
+            if (null == _demo)
             {
-                Debug.LogError("Error: ImageTrackingVisualizer._diagram is not set, disabling script.");
-                enabled = false;
-                return;
-            }
-            if (null == _diagramConf1)
-            {
-                Debug.LogError("Error: ImageTrackingVisualizer._diagram is not set, disabling script.");
-                enabled = false;
-                return;
-            }
-            if (null == _diagramConf2)
-            {
-                Debug.LogError("Error: ImageTrackingVisualizer._diagram is not set, disabling script.");
-                enabled = false;
-                return;
-            }
-            if (null == _diagramConf3)
-            {
-                Debug.LogError("Error: ImageTrackingVisualizer._diagram is not set, disabling script.");
-                enabled = false;
-                return;
-            }
-            if (null == _videoBase)
-            {
-                Debug.LogError("Error: ImageTrackingVisualizer._videoBase is not set, disabling script.");
-                enabled = false;
-                return;
-            }
-            if (null == _videoConf1)
-            {
-                Debug.LogError("Error: ImageTrackingVisualizer._videoConf1 is not set, disabling script.");
-                enabled = false;
-                return;
-            }
-            if (null == _videoConf2)
-            {
-                Debug.LogError("Error: ImageTrackingVisualizer._videoConf2 is not set, disabling script.");
-                enabled = false;
-                return;
-            }
-            if (null == _videoConf3)
-            {
-                Debug.LogError("Error: ImageTrackingVisualizer._videoConf3 is not set, disabling script.");
-                enabled = false;
-                return;
-            }
-            if (null == _menu)
-            {
-                Debug.LogError("Error: ImageTrackingVisualizer._menu is not set, disabling script.");
+                Debug.LogError("Error: ImageTrackingVisualizer._demo is not set, disabling script.");
                 enabled = false;
                 return;
             }
@@ -144,7 +88,7 @@ namespace MagicLeap
             _trackerBehavior.OnTargetFound += OnTargetFound;
             _trackerBehavior.OnTargetLost += OnTargetLost;
 
-            RefreshConfiguration();
+            RefreshViewMode();
         }
 
         private void Update()
@@ -166,11 +110,11 @@ namespace MagicLeap
         /// <summary>
         /// Update which objects should be visible
         /// </summary>
-        /// <param name="configurationStatus">Contains the mode to view</param>
-        public void UpdateConfigurationStatus(ImageTrackingExample.ConfigurationStatus configurationStatus)
+        /// <param name="viewMode">Contains the mode to view</param>
+        public void UpdateViewMode(ImageTrackingExample.ViewMode viewMode)
         {
-            _lastConfiguration = configurationStatus;
-            RefreshConfiguration();
+            _lastViewMode = viewMode;
+            RefreshViewMode();
         }
         #endregion
 
@@ -178,57 +122,29 @@ namespace MagicLeap
         /// <summary>
         /// De/Activate objects to be hidden/seen
         /// </summary>
-        private void RefreshConfiguration()
+        private void RefreshViewMode()
         {
-            switch (_lastConfiguration)
+            switch (_lastViewMode)
             {
-                case ImageTrackingExample.ConfigurationStatus.Base:
+                case ImageTrackingExample.ViewMode.All:
+                    _axis.SetActive(_targetFound);
                     _trackingCube.SetActive(_targetFound);
-                    _diagramBase.SetActive(_targetFound);
-                    _diagramConf1.SetActive(false);
-                    _diagramConf2.SetActive(false);
-                    _diagramConf3.SetActive(false);
-                    _menu.SetActive(_targetFound);
-                    _videoBase.SetActive(_targetFound);
-                    _videoConf1.SetActive(false);
-                    _videoConf2.SetActive(false);
-                    _videoConf3.SetActive(false);
+                    _demo.SetActive(_targetFound);
                     break;
-                case ImageTrackingExample.ConfigurationStatus.Configuration1:
-                    _trackingCube.SetActive(_targetFound);
-                    _diagramBase.SetActive(false);
-                    _diagramConf1.SetActive(_targetFound);
-                    _diagramConf2.SetActive(false);
-                    _diagramConf3.SetActive(false);
-                    _menu.SetActive(_targetFound);
-                    _videoBase.SetActive(false);
-                    _videoConf1.SetActive(_targetFound);
-                    _videoConf2.SetActive(false);
-                    _videoConf3.SetActive(false);
+                case ImageTrackingExample.ViewMode.AxisOnly:
+                    _axis.SetActive(_targetFound);
+                    _trackingCube.SetActive(false);
+                    _demo.SetActive(false);
                     break;
-                case ImageTrackingExample.ConfigurationStatus.Configuration2:
+                case ImageTrackingExample.ViewMode.TrackingCubeOnly:
+                    _axis.SetActive(false);
                     _trackingCube.SetActive(_targetFound);
-                    _diagramBase.SetActive(false);
-                    _diagramConf1.SetActive(false);
-                    _diagramConf2.SetActive(_targetFound);
-                    _diagramConf3.SetActive(false);
-                    _menu.SetActive(_targetFound);
-                    _videoBase.SetActive(false);
-                    _videoConf1.SetActive(false);
-                    _videoConf2.SetActive(_targetFound);
-                    _videoConf3.SetActive(false);
+                    _demo.SetActive(false);
                     break;
-                case ImageTrackingExample.ConfigurationStatus.Configuration3:
-                    _trackingCube.SetActive(_targetFound);
-                    _diagramBase.SetActive(false);
-                    _diagramConf1.SetActive(false);
-                    _diagramConf2.SetActive(false);
-                    _diagramConf3.SetActive(_targetFound);
-                    _menu.SetActive(_targetFound);
-                    _videoBase.SetActive(false);
-                    _videoConf1.SetActive(false);
-                    _videoConf2.SetActive(false);
-                    _videoConf3.SetActive(_targetFound);
+                case ImageTrackingExample.ViewMode.DemoOnly:
+                    _axis.SetActive(false);
+                    _trackingCube.SetActive(false);
+                    _demo.SetActive(_targetFound);
                     break;
             }
         }
@@ -243,7 +159,7 @@ namespace MagicLeap
         {
             _eventString = String.Format("Target Found ({0})", (isReliable ? "Reliable" : "Unreliable"));
             _targetFound = true;
-            RefreshConfiguration();
+            RefreshViewMode();
         }
 
         /// <summary>
@@ -252,8 +168,8 @@ namespace MagicLeap
         private void OnTargetLost()
         {
             _eventString = "Target Lost";
-            //_targetFound = false;
-            //RefreshConfiguration();
+            _targetFound = false;
+            RefreshViewMode();
         }
         #endregion
     }

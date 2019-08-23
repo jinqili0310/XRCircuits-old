@@ -1,9 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/test1.unity
+- path: Assets/MagicLeap/Examples/Scenes/MediaPlayer.unity
   isLoaded: 1
   isActive: 1
-  isSubScene: 0
-- path: Assets/MagicLeap/Examples/Scenes/InputModule.unity
-  isLoaded: 0
-  isActive: 0
   isSubScene: 0

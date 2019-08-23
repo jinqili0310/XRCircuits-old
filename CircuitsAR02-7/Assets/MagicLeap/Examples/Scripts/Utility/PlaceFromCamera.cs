@@ -12,7 +12,6 @@
 
 using System.Collections;
 using UnityEngine;
-using UnityEngine.XR.MagicLeap;
 
 namespace MagicLeap
 {
@@ -20,12 +19,8 @@ namespace MagicLeap
     /// This class handles setting the position and rotation of the
     /// transform to match the camera's based on input distance and height
     /// </summary>
-    /// 
-    [RequireComponent(typeof(ControllerConnectionHandler))]
     public class PlaceFromCamera : MonoBehaviour
     {
-        //private bool isOn = false;
-
         public enum LookDirection
         {
             None = 0,
@@ -34,8 +29,6 @@ namespace MagicLeap
         }
 
         #region Private Variables
-        [SerializeField] private ControllerConnectionHandler _controllerConnectionHandler = null;
-
         [SerializeField, Tooltip("The distance from the camera through its forward vector.")]
         private float _distance = 0.0f;
 
@@ -55,17 +48,11 @@ namespace MagicLeap
         [SerializeField, Tooltip("The direction the transform should face.")]
         private LookDirection _lookDirection = LookDirection.LookAwayFromCamera;
 
-        public bool _placeOnAwake = true;
+        [SerializeField, Tooltip("Toggle to set position on awake.")]
+        private bool _placeOnAwake = false;
 
-        public bool _placeOnUpdate = false;
-
-
-        // MobileApp-specific variables
-        private bool _isCalibrated = false;
-        private Quaternion _calibrationOrientation = Quaternion.identity;
-        private const float MOBILEAPP_FORWARD_DISTANCE_FROM_CAMERA = 0.75f;
-        private const float MOBILEAPP_UP_DISTANCE_FROM_CAMERA = -0.1f;
-
+        [SerializeField, Tooltip("Toggle to set position on update.")]
+        private bool _placeOnUpdate = false;
         #endregion
 
         #region Public Properties
@@ -77,67 +64,28 @@ namespace MagicLeap
             get { return _placeOnUpdate; }
             set { _placeOnUpdate = value; }
         }
-
         #endregion
 
         #region Unity Methods
         /// <summary>
         /// Set the transform from latest position if flag is checked.
         /// </summary>
-        /// 
-
-        void Start()
-        {
-            MLInput.OnControllerButtonUp += HandleOnButtonUp;
-
-            UpdateTransform(Camera.main);
-
-        }
-
         void Awake()
         {
             if (_placeOnAwake)
             {
                 StartCoroutine(UpdateTransformEndOfFrame());
             }
-            
         }
 
         void Update()
         {
             Camera mainCamera = Camera.main;
-
             if (_placeOnUpdate && mainCamera.transform.hasChanged)
             {
                 UpdateTransform(mainCamera);
             }
-
-            //isOn = false;
         }
-
-        private void HandleOnButtonUp(byte controllerId, MLInputControllerButton button)
-        {
-            MLInputController controller = _controllerConnectionHandler.ConnectedController;
-
-            if (_controllerConnectionHandler.ConnectedController.Id == controllerId && button == MLInputControllerButton.HomeTap)
-            {
-                /*if(_placeOnUpdate == false && isOn == false)
-                {
-                    _placeOnUpdate = true;
-                    isOn = true;
-                    Debug.Log(_placeOnUpdate.ToString());
-                }
-                else if(_placeOnUpdate == true && isOn == true)
-                {
-                    _placeOnUpdate = false;
-                    isOn = false;
-                }*/
-
-                UpdateTransform(Camera.main);
-                
-            }
-
-            }
 
         void OnValidate()
         {

@@ -37,8 +37,8 @@ namespace MagicLeap
         [SerializeField, Tooltip("Pause Material")]
         private Material _pauseMaterial = null;
 
-        //[SerializeField, Tooltip("Auto Loop")]
-        //private bool _autoLoop = false;
+        [SerializeField, Tooltip("Auto Loop")]
+        private bool _autoLoop = false;
 
         [SerializeField, Tooltip("Rewind Button")]
         private MediaPlayerButton _rewindButton = null;
@@ -188,7 +188,7 @@ namespace MagicLeap
             _mediaPlayer.OnInfo += HandleInfo;
             _mediaPlayer.OnVideoPrepared += HandleVideoPrepared;
 
-            //_pausePlayButton.OnToggle += PlayPause;
+            _pausePlayButton.OnToggle += PlayPause;
             _rewindButton.OnControllerTriggerDown += Rewind;
             _forwardButton.OnControllerTriggerDown += FastForward;
             _timelineSlider.OnValueChanged += Seek;
@@ -201,7 +201,7 @@ namespace MagicLeap
             _mediaPlayer.StereoMode = _stereoMode;
             _mediaPlayer.VideoSource = _url;
             _mediaPlayer.LicenseServer = _licenseUrl;
-            _mediaPlayer.IsLooping = true;
+            _mediaPlayer.IsLooping = _autoLoop;
             if (_customLicenseHeaderData != null && _customLicenseHeaderData.Length > 0)
             {
                 Dictionary<string, string> dict = new Dictionary<string, string>();
@@ -243,7 +243,7 @@ namespace MagicLeap
             _mediaPlayer.OnInfo -= HandleInfo;
             _mediaPlayer.OnVideoPrepared -= HandleVideoPrepared;
 
-            //_pausePlayButton.OnToggle -= PlayPause;
+            _pausePlayButton.OnToggle -= PlayPause;
             _rewindButton.OnControllerTriggerDown -= Rewind;
             _forwardButton.OnControllerTriggerDown -= FastForward;
             _timelineSlider.OnValueChanged -= Seek;
@@ -254,7 +254,7 @@ namespace MagicLeap
         {
             if (_mediaPlayer.IsPlaying)
             {
-                //_mediaPlayer.Stop();
+                _mediaPlayer.Stop();
             }
         }
 
@@ -441,11 +441,16 @@ namespace MagicLeap
         /// See HandlePlay() and HandlePause() for more info
         /// </summary>
         /// <param name="shouldPlay">True when resuming, false when should pause</param>
-        private void PlayPause()
+        private void PlayPause(bool shouldPlay)
         {
             if (_mediaPlayer != null)
             {
-               if (!_mediaPlayer.IsPlaying)
+                if (!shouldPlay && _mediaPlayer.IsPlaying)
+                {
+                    _UIUpdateTimer = float.MaxValue;
+                    _mediaPlayer.Pause();
+                }
+                else if (shouldPlay && !_mediaPlayer.IsPlaying)
                 {
                     _UIUpdateTimer = float.MaxValue;
                     _mediaPlayer.Play();
@@ -459,7 +464,7 @@ namespace MagicLeap
         private void Stop()
         {
             _UIUpdateTimer = float.MaxValue;
-            //_mediaPlayer.Stop();
+            _mediaPlayer.Stop();
         }
 
         /// <summary>
@@ -511,36 +516,5 @@ namespace MagicLeap
         }
         #endregion // Event Handlers
     }
-
-    /* private void RefreshConfiguration()
-    {
-        switch (_lastConfiguration)
-        {
-            case ImageTrackingExample.ConfigurationStatus.Base:
-                _trackingCube.SetActive(_targetFound);
-                _diagram.SetActive(_targetFound);
-                _video.SetActive(_targetFound);
-                _menu.SetActive(_targetFound);
-                break;
-            case ImageTrackingExample.ConfigurationStatus.Configuration1:
-                _trackingCube.SetActive(_targetFound);
-                _diagram.SetActive(false);
-                _video.SetActive(false);
-                _menu.SetActive(false);
-                break;
-            case ImageTrackingExample.ConfigurationStatus.Configuration2:
-                _trackingCube.SetActive(false);
-                _diagram.SetActive(_targetFound);
-                _video.SetActive(false);
-                _menu.SetActive(false);
-                break;
-            case ImageTrackingExample.ConfigurationStatus.Configuration3:
-                _trackingCube.SetActive(false);
-                _diagram.SetActive(false);
-                _video.SetActive(_targetFound);
-                _menu.SetActive(false);
-                break;
-        }
-    } */
 }
 

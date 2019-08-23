@@ -1,0 +1,21 @@
+sceneSetups:
+- path: Assets/MagicLeap/Examples/Scenes/InputModule.unity
+  isLoaded: 0
+  isActive: 0
+  isSubScene: 0
+- path: Assets/Scenes/Home.unity
+  isLoaded: 0
+  isActive: 0
+  isSubScene: 0
+- path: Assets/Scenes/KCLMode.unity
+  isLoaded: 1
+  isActive: 1
+  isSubScene: 0
+- path: Assets/Scenes/TEMode.unity
+  isLoaded: 0
+  isActive: 0
+  isSubScene: 0
+- path: Assets/Scenes/RCLMode.unity
+  isLoaded: 0
+  isActive: 0
+  isSubScene: 0
